@@ -1,0 +1,21 @@
+{
+  "name": "pred-conectsus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "dependencies": {
+    "amqp-ts": "^1.8.0",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "puppeteer": "^8.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "winston": "^3.3.3"
+  },
+  "scripts": {
+    "start": "ts-node src/main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
