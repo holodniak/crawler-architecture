@@ -10,7 +10,7 @@ const brokerService = new MessageBrokerService(configService, logger);
 const collectorQueue = configService.getCrawlerControllerQueue();
 brokerService.subscribe(collectorQueue, async (msg, done) => {
     try {
-        new predConnectSUS(brokerService,configService,logger).Run(msg);
+        await (new predConnectSUS(brokerService,configService,logger).Run(msg));
         done(true)
     } catch (error) {
         console.log(error);
