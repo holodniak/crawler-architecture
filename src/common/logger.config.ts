@@ -4,11 +4,6 @@ import winston, { createLogger } from 'winston';
 export const loggerOptions: winston.LoggerOptions = {
 	transports: [
 		new winston.transports.Console({ level: 'debug' }),
-		// new WinstonLogStash({
-		// 	mode: 'udp',
-		// 	host: 'logstash',
-		// 	port: 5000,
-		// }),
 	],
 	format: winston.format.combine(
 		winston.format.timestamp(),

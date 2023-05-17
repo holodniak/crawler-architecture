@@ -22,13 +22,10 @@ export class ConfigService {
 		return value.trim();
 	}
 
-	public getBucketPrefix(): string {
-		return this.get(STORAGE_BUCKET_PREFIX);
-	}
-
 	public isDevelopmentEnv(): boolean {
 		return this.get(NODE_ENV) === 'development';
 	}
+
 	public getCrawlerControllerQueue(): string {
 		return this.get(CRAWLER_CONTROLLER_QUEUE);
 	}

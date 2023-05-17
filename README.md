@@ -1,1 +1,1 @@
-# predicta-sus
+# Crawler architecture for data collection using rabbitMQ
